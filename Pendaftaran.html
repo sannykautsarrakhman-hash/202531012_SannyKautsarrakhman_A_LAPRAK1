@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum - Pendaftaran</title>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="index.html">Beranda</a> |
+        <a href="Pendaftaran.html">Pendaftaran</a>
+    </nav>
+    <hr>
+
+    <!-- Judul -->
+    <h2>Form Pendaftaran Praktikan</h2>
+
+    <!-- Formulir -->
+    <form method="post" action="">
+        <table>
+            <!-- Nama Lengkap -->
+            <tr>
+                <td><label for="nama">Nama Lengkap</label></td>
+                <td>: <input type="text" id="nama" name="nama"></td>
+            </tr>
+            
+            <!-- Password -->
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td>: <input type="password" id="pass" name="pass"></td>
+            </tr>
+            
+            <!-- NIM -->
+            <tr>
+                <td><label for="nim">NIM</label></td>
+                <td>: <input type="number" id="nim" name="nim" step="1"></td>
+            </tr>
+            
+            <!-- Tanggal Lahir -->
+            <tr>
+                <td><label for="tgl">Tanggal Lahir</label></td>
+                <td>: <input type="date" id="tgl" name="tgl"></td>
+            </tr>
+            
+            <!-- Jenis Kelamin -->
+            <tr>
+                <td><label>Jenis Kelamin</label></td>
+                <td>: 
+                    <input type="radio" id="jk_l" name="jk" value="L">
+                    <label for="jk_l">Laki-Laki</label>
+                    <input type="radio" id="jk_p" name="jk" value="P">
+                    <label for="jk_p">Perempuan</label>
+                </td>
+            </tr>
+            
+            <!-- Minat Bidang -->
+            <tr>
+                <td><label>Minat bidang</label></td>
+                <td>: 
+                    <input type="checkbox" id="minat_web" name="minat" value="web">
+                    <label for="minat_web">Web</label>
+                    <input type="checkbox" id="minat_network" name="minat" value="network">
+                    <label for="minat_network">Jaringan</label>
+                    <input type="checkbox" id="minat_design" name="minat" value="design">
+                    <label for="minat_design">Design/Modeling</label>
+                </td>
+            </tr>
+            
+            <!-- Program Studi -->
+            <tr>
+                <td><label for="prodi">Program Studi</label></td>
+                <td>: 
+                    <select id="prodi" name="prodi">
+                        <option value="IF">S1 Teknik Informatika</option>
+                        <option value="SI">S1 Sistem Informasi</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Alasan Mendaftar -->
+            <tr>
+                <td><label for="alasan">Alasan Mendaftar</label></td>
+                <td>: <textarea id="alasan" name="alasan" rows="3" cols="20"></textarea></td>
+            </tr>
+            
+            <!-- Tombol -->
+            <tr>
+                <td></td>
+                <td>: 
+                    <button type="submit">Kirim</button>
+                    <button type="reset">Reset</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
